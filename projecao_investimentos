@@ -1,0 +1,10 @@
+print('Vamos descobrir o quanto seu dinheiro irá render em até 25 anos!')
+print()
+inv_inicial = float(input('Digite o valor de investimento inicial: '))
+rend = float(input('Digite o rendimento anual: '))
+i = 0
+print()
+while i < 25:
+  inv_inicial += inv_inicial * rend
+  i += 1
+  print('Ano {} = R$ {}' .format(i, round(inv_inicial, 2)))
